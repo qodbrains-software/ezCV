@@ -1,0 +1,42 @@
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.column-left{
+    width: 800px;
+}
+
+.column-right{
+    padding-left: 50px;
+}
+
+.main {
+    display: flex;
+}
+
+
+h1 {
+
+    height: 50px;
+    left: 25px;
+    top: 25px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    
+    /* identical to box height */
+    
+    color: #F9CB81;
+    
+    
+
+}
+
+
+
+
+
