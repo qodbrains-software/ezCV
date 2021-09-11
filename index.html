@@ -14,7 +14,7 @@
     <div class="container">
         <div class="main">
             <div class="column-left">
-            <h1 contenteditable="true">
+            <h1 id="full-names" contenteditable="true">
                 Ralph Edwards
             </h1>
            <h3 contenteditable="true">
@@ -165,10 +165,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     const saveCV = () => {
+        const fullNames = document.querySelector("#full-names").textContent.trim("_")
         html2pdf(document.querySelector("body"), {
         margin:       1,
-        filename:     'My CV.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
+        filename:     fullNames + "_CV",
+        image:        { type: 'jpeg', quality: 1 },
         html2canvas:  { dpi: 192, letterRendering: true },
         jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
         });
