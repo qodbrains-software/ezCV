@@ -17,6 +17,7 @@
             <h1 id="full-names" contenteditable="true">
                 Ralph Edwards
             </h1>
+            <br/>
            <h3 contenteditable="true">
                Software Engineer
            </h3> 
@@ -121,7 +122,9 @@
                 <p contenteditable="true">
                     <a href="andrewblack@gmail.com">andrewblack@gmail.com</a>
                 </p>
-                <p contenteditable="true"> <a href="auptowork.com/mycv/j.smith">auptowork.com/mycv/j.smith</a></p>
+                <p contenteditable="true">
+                    <a href="auptowork.com/mycv/j.smith">auptowork.com/mycv/j.smith</a>
+                </p>
                 <h3>
                     Skills
                 </h3>
@@ -209,7 +212,7 @@
         filename:     fullNames + "_CV",
         image:        { type: 'jpeg', quality: 1 },
         html2canvas:  { dpi: 192, letterRendering: true },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        jsPDF:        { unit: 'cm', format: 'a4', orientation: 'portrait' }
         });
     }
 </script>
