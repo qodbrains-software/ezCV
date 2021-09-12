@@ -31,7 +31,21 @@ h1 {
     color: #F9CB81;
 }
 
+.material-icons{
+    color: #F9CB81;
+}
 
+.items {
+    display: flex;
+}
+
+span {
+    padding-top: 15px;
+}
+
+#space{
+padding-left: 9px;
+}
 
 
 
