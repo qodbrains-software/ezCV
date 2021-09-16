@@ -161,8 +161,8 @@
                     <h5 contenteditable="true">Outstanding Achievement Award</h5>
                     <p contenteditable="true">December 2009, Didier Sachs</p>
                 </aside>
-            </div>
-        </div>
+            </div> 
+       </div>
     </div>
 <button onclick="saveCV()">Save CV as PDF</button>
 <script src="./scripts/HTML2canvas.js"></script>
@@ -176,7 +176,7 @@
         filename:     fullNames + "_CV",
         image:        { type: 'jpeg', quality: 1 },
         html2canvas:  { dpi: 192, letterRendering: true },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        jsPDF:        { unit: 'cm', format: 'a4', orientation: 'portrait' }
         });
     }
 </script>
