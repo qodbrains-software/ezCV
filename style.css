@@ -9,7 +9,7 @@
 h3 {
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.02em;
     color: #2A2C2E;
 }
@@ -26,6 +26,7 @@ h3 {
 .main {
     display: flex;
     justify-content: center;
+    border: 1px solid blue;
 }
 
 
