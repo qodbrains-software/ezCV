@@ -174,8 +174,8 @@
         html2pdf(document.querySelector(".main"), {
         margin:       0,
         filename:     fullNames + "_CV",
-        image:        { type: 'png', quality: 1 },
-        html2canvas:  { dpi: 192, letterRendering: true },
+        image:        { type: 'jpeg', quality: 0.95 },
+        html2canvas:  { dpi: 300, letterRendering: true },
         jsPDF:        { unit: 'cm', format: 'tabloid', orientation: 'portrait',}
         });
     }
