@@ -172,11 +172,11 @@
     const saveCV = () => {
         const fullNames = document.querySelector("#full-names").textContent.trim("_")
         html2pdf(document.querySelector("body"), {
-        margin:       1,
+        margin:       0,
         filename:     fullNames + "_CV",
-        image:        { type: 'jpeg', quality: 1 },
+        image:        { type: 'png', quality: 1 },
         html2canvas:  { dpi: 192, letterRendering: true },
-        jsPDF:        { unit: 'cm', format: 'a4', orientation: 'portrait' }
+        jsPDF:        { unit: 'cm', format: 'tabloid', orientation: 'portrait',}
         });
     }
 </script>
