@@ -67,3 +67,6 @@ span {
     padding-left: 20px;
 }
 
+[contenteditable] {
+    outline: 0px solid transparent;
+}
