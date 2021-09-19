@@ -175,37 +175,13 @@
             </div> 
        </div>
     </div>
-<button class="float" onclick="saveCV()">Save CV as PDF</button>
+    <div class="avail-actions">
+        <button class="float save-button">Save CV as PDF</button>
+        <input type="color" class="themer" name="themer">
+    </div>
 <script src="./scripts/HTML2canvas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    const saveCV = () => {
-        const fullNames = document.querySelector("#full-names").textContent.trim("_")
-        html2pdf(document.querySelector(".main"), {
-        margin:       0,
-        filename:     fullNames + "_CV",
-        image:        { type: 'jpeg', quality: 0.95 },
-        html2canvas:  { dpi: 300, letterRendering: true },
-        jsPDF:        { unit: 'cm', format: 'tabloid', orientation: 'portrait',}
-        });
-    }
-    
-    const detectPageHeight = () => {
-        return pageHeight = document.querySelector('.main').getBoundingClientRect().height;
-    }
-
-    const addElement = () => {     
-        if(detectPageHeight() < 1400){
-            var node = document.createElement("li");                 // Create a <li> node
-            var textnode = document.createTextNode("Water Experience....");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.querySelector("ul").appendChild(node);
-        }
-        else{
-            alert("You've exceeded the recommended page size");
-        }    
-    }
-</script>
+<script src="./scripts/main.js"></script>
 </body>
 </html>
