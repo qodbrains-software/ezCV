@@ -17,7 +17,7 @@ const detectPageHeight = () => {
 }
 
 const addElement = () => {     
-    if(detectPageHeight() < 1400){
+    if(detectPageHeight() < 1725){
         var node = document.createElement("li");                 // Create a <li> node
         var textnode = document.createTextNode("Water Experience....");         // Create a text node
         node.appendChild(textnode);                              // Append the text to <li>
