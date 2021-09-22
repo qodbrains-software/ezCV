@@ -39,11 +39,32 @@ const changeTheme = (event) => {
     body.style.backgroundColor = event.target.value;
 }
 
+// Make editable links dynamic:
+const makeLinksDynamic = (listOfLinks) => {
+    listOfLinks.forEach(link => {
+        link.addEventListener('input', function(){
+            if(Array.from(link.classList).includes("email-link")){
+                link.href = "mailto:" + link.textContent;
+            }
+            else {
+                link.href = "http://" + link.textContent;
+            }
+        })
+    })
+}
+
 // ====================================================================
 //TAG/ELEMENT ELEMENT SELECTION:
 // ====================================================================
 const themer = document.querySelector(".themer"); //input:color
 const saveButton = document.querySelector(".save-button");
+const links = document.querySelectorAll(".link");
+
+
+// ====================================================================
+//PUTTING THINGS TO WORK:
+// ====================================================================
+makeLinksDynamic(links);
 
 themer.addEventListener("input", e => {
     changeTheme(e);
