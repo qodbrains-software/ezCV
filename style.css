@@ -82,7 +82,7 @@ span {
     padding-top: 15px;
 }
 
-#space {
+.space {
     padding-left: 9px;
 }
 
@@ -90,12 +90,12 @@ a {
     margin-top: 16px;
 }
 
-#align {
+.align {
     display: flex;
     justify-content: space-between;
 }
 
-#header-text{
+.header-text{
     padding-left: 20px;
 }
 
