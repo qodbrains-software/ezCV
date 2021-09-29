@@ -7,7 +7,7 @@ const saveCV = () => {
     margin:       0,
     filename:     fullNames + "_CV",
     image:        { type: 'jpeg', quality: 0.95 },
-    html2canvas:  { dpi: 200, letterRendering: true },
+    html2canvas:  { dpi: 250, letterRendering: true },
     jsPDF:        { unit: 'cm', format: 'tabloid', orientation: 'portrait',}
     });
 }
@@ -28,38 +28,15 @@ const addElement = () => {
     }    
 }
 
-function hexToRgbA(hex){
-    var c;
-    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-        c= hex.substring(1).split('');
-        if(c.length== 3){
-            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-        }
-        c= '0x'+c.join('');
-        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.1)';
-    }
-    throw new Error('Bad Hex');
-}
-
-hexToRgbA('#fbafff')
-
-/*  returned value: (String)
-rgba(251,175,255,0.1)
-*/
-
 const changeTheme = (event) => {
     let body = document.querySelector("body");
     let heading = document.querySelector("h1");
-    let subTitles = document.querySelectorAll(".box");
     let icons = document.querySelectorAll(".material-icons");
     icons.forEach(icon => {
         icon.style.color = event.target.value;
     })
     heading.style.color = event.target.value;
     body.style.backgroundColor = event.target.value;
-    subTitles.forEach(subTitle => {
-        subTitle.style.backgroundColor = hexToRgbA(event.target.value);
-    })
 }
 
 // Make editable links dynamic:
