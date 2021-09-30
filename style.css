@@ -116,3 +116,20 @@ h3::before {
     display: inline-block;
     width: auto;
 }
+
+button {
+    border: none;
+}
+
+.btn {
+    display: none;
+}
+
+li:hover .btn{
+    display: inline-block;
+}
+
+.edite:hover .btn{
+    display: inline-block;
+}
+
