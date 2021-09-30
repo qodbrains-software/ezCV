@@ -100,9 +100,9 @@ a {
 
 h3::before {
     content: '';
-    background: rgb(231, 212, 183, 0.2);
     width: 90%;
     height: 13px;
+    background: var(--default, rgb(231, 212, 183, 0.2));
     display: block;
     position: absolute;
     top: 13px;
