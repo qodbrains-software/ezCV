@@ -98,17 +98,21 @@ a {
     outline: 0px solid transparent;
 }
 
-.box {
-    background-color: rgba(231, 212, 183, 0.2);
-    width: 100%;
+h3::before {
+    content: '';
+    background: rgb(231, 212, 183, 0.2);
+    width: 90%;
     height: 13px;
-    position: absolute; 
-    left: 10px;
-    top: 34px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    z-index: -1;
 }
 
-.parent {
+
+.main h3 {
     position: relative;
-    width: auto;
+    z-index: 10;
     display: inline-block;
+    width: auto;
 }
