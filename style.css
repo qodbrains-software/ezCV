@@ -112,3 +112,20 @@ a {
     width: auto;
     display: inline-block;
 }
+
+button {
+    border: none;
+}
+
+.btn {
+    display: none;
+}
+
+li:hover .btn{
+    display: inline-block;
+}
+
+.edite:hover .btn{
+    display: inline-block;
+}
+
