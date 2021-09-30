@@ -28,15 +28,33 @@ const addElement = () => {
     }    
 }
 
+
+const hexToRgbA = hex =>{
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.1)';
+    }
+    throw new Error('Bad Hex');
+}
+
 const changeTheme = (event) => {
     let body = document.querySelector("body");
     let heading = document.querySelector("h1");
+    let subTitles = document.querySelectorAll("h3");
     let icons = document.querySelectorAll(".material-icons");
     icons.forEach(icon => {
         icon.style.color = event.target.value;
     })
     heading.style.color = event.target.value;
     body.style.backgroundColor = event.target.value;
+    subTitles.forEach(subTitle => {
+        subTitle.style.setProperty("--default", hexToRgbA(event.target.value));
+    })
 }
 
 // Make editable links dynamic:
