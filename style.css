@@ -161,3 +161,18 @@ button {
   .edite:hover .btn{
     display: inline-block;
   }
+
+li {
+    cursor: pointer;
+    transition: background-color ease-in;
+    border-radius: 5px;
+}
+
+li:hover{
+    background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
+    border: var(--li-background-color, rgb(61, 189, 174)) 3px dashed;
+}
+li:active{
+    cursor: -moz-grabbing;
+    cursor:grabbing;
+}

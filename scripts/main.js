@@ -47,11 +47,15 @@ const changeTheme = (event) => {
     let heading = document.querySelector("h1");
     let subTitles = document.querySelectorAll("h3");
     let icons = document.querySelectorAll(".material-icons");
+    let listItems = document.querySelectorAll("li");
     icons.forEach(icon => {
         icon.style.color = event.target.value;
     })
     heading.style.color = event.target.value;
     body.style.backgroundColor = event.target.value;
+    listItems.forEach(item => {
+        item.style.setProperty("--li-background-color", hexToRgbA(event.target.value))
+    })
     subTitles.forEach(subTitle => {
         subTitle.style.setProperty("--default", hexToRgbA(event.target.value));
     })
@@ -70,6 +74,13 @@ const makeLinksDynamic = (listOfLinks) => {
         })
     })
 }
+
+// ====================================================================
+//Make List items sortable:
+// ====================================================================
+const sortable = new Sortable.default(document.querySelectorAll('ul'), {
+    draggable: 'li'
+  });
 
 // ====================================================================
 //TAG/ELEMENT ELEMENT SELECTION:
