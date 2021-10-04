@@ -17,7 +17,7 @@ body {
 
 h3 {
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #2A2C2E;
@@ -58,7 +58,7 @@ h1 {
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#0C9;
+	background-color:#00cc99;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -66,17 +66,32 @@ h1 {
     cursor: pointer;
 }
 
-.float-btn{
+#position{
     position:fixed;
-	width:60px;
-	height:60px;
 	bottom:120px;
 	right:40px;
-	background-color:#0C9;
-	border-radius:50px;
-	box-shadow: 2px 2px 3px #999;
-    cursor: pointer;
 }
+
+.input-color-container {
+    position: relative;
+    overflow: hidden;
+    width:60px;
+	height:60px;
+    border: solid 2px #ddd;
+    border-radius: 40px;
+    
+  }
+  
+  .input-color {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 76px;
+    height: 76px;
+    border: none;
+    box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+  }
 
 .material-icons{
     color: #F9CB81;
