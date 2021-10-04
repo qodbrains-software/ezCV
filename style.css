@@ -161,3 +161,22 @@ button {
   .edite:hover .btn{
     display: inline-block;
   }
+
+li {
+    cursor: pointer;
+    transition: background-color ease-in;
+    border-radius: 5px;
+}
+
+li:hover{
+    background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
+    border: var(--li-border-color, #F9CB81) 3px dashed;
+}
+li:active{
+    cursor: -moz-grabbing;
+    cursor:grabbing;
+}
+
+li:hover .material-icons {
+    border: 1px var(--default-icons, #F9CB81) dashed;
+}
