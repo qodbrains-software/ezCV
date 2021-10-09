@@ -184,3 +184,7 @@ li:active {
 li:hover .material-icons {
     border: 1px var(--default-icons, #F9CB81) dashed;
 }
+
+.can-disable:hover {
+    cursor: url("./images/icons/icons8-cursor-24.png"), auto;
+}
