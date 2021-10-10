@@ -35,7 +35,7 @@ function _0xb375(){const _0x4e6002=['3482984YcmyCl','3NbgMJt','1842684shiUHm','c
 // ====================================================================
 //MAKE LIST ITEMS SORTABLE:
 // ====================================================================
-function _0x2c59(){const _0x46de1f=['default','314032abPjHf','8nAEYSK','572FeWkgr','44300axhifi','10YxRUJZ','163429BGUIvX','385450qREkzc','77hXgDFJ','245427kZybPW','18iAUkov','1rffAFd','45012unrRfy','811593pYGHZI'];_0x2c59=function(){return _0x46de1f;};return _0x2c59();}function _0x4148(_0x355f54,_0x376283){const _0x2c5970=_0x2c59();return _0x4148=function(_0x414847,_0x7ecb93){_0x414847=_0x414847-0x11e;let _0x1b4e97=_0x2c5970[_0x414847];return _0x1b4e97;},_0x4148(_0x355f54,_0x376283);}const _0x1398a7=_0x4148;(function(_0x34a9fa,_0x271145){const _0x3eb069=_0x4148,_0x3160e2=_0x34a9fa();while(!![]){try{const _0x4a194a=-parseInt(_0x3eb069(0x127))/0x1*(-parseInt(_0x3eb069(0x123))/0x2)+parseInt(_0x3eb069(0x125))/0x3+parseInt(_0x3eb069(0x12b))/0x4*(-parseInt(_0x3eb069(0x121))/0x5)+parseInt(_0x3eb069(0x126))/0x6*(parseInt(_0x3eb069(0x122))/0x7)+parseInt(_0x3eb069(0x11e))/0x8*(parseInt(_0x3eb069(0x129))/0x9)+-parseInt(_0x3eb069(0x120))/0xa*(-parseInt(_0x3eb069(0x124))/0xb)+parseInt(_0x3eb069(0x128))/0xc*(-parseInt(_0x3eb069(0x11f))/0xd);if(_0x4a194a===_0x271145)break;else _0x3160e2['push'](_0x3160e2['shift']());}catch(_0x35ee19){_0x3160e2['push'](_0x3160e2['shift']());}}}(_0x2c59,0x23156));const sortable=new Sortable[(_0x1398a7(0x12a))](document['querySelectorAll']('ul'),{'draggable':'li'});
+// function_0x2c59(){const_0x46de1f=['default','314032abPjHf','8nAEYSK','572FeWkgr','44300axhifi','10YxRUJZ','163429BGUIvX','385450qREkzc','77hXgDFJ','245427kZybPW','18iAUkov','1rffAFd','45012unrRfy','811593pYGHZI'];_0x2c59=function(){return _0x46de1f;};return _0x2c59();}function _0x4148(_0x355f54,_0x376283){const _0x2c5970=_0x2c59();return _0x4148=function(_0x414847,_0x7ecb93){_0x414847=_0x414847-0x11e;let _0x1b4e97=_0x2c5970[_0x414847];return _0x1b4e97;},_0x4148(_0x355f54,_0x376283);}const _0x1398a7=_0x4148;(function(_0x34a9fa,_0x271145){const _0x3eb069=_0x4148,_0x3160e2=_0x34a9fa();while(!![]){try{const _0x4a194a=-parseInt(_0x3eb069(0x127))/0x1*(-parseInt(_0x3eb069(0x123))/0x2)+parseInt(_0x3eb069(0x125))/0x3+parseInt(_0x3eb069(0x12b))/0x4*(-parseInt(_0x3eb069(0x121))/0x5)+parseInt(_0x3eb069(0x126))/0x6*(parseInt(_0x3eb069(0x122))/0x7)+parseInt(_0x3eb069(0x11e))/0x8*(parseInt(_0x3eb069(0x129))/0x9)+-parseInt(_0x3eb069(0x120))/0xa*(-parseInt(_0x3eb069(0x124))/0xb)+parseInt(_0x3eb069(0x128))/0xc*(-parseInt(_0x3eb069(0x11f))/0xd);if(_0x4a194a===_0x271145)break;else _0x3160e2['push'](_0x3160e2['shift']());}catch(_0x35ee19){_0x3160e2['push'](_0x3160e2['shift']());}}}(_0x2c59,0x23156));const sortable=new Sortable[(_0x1398a7(0x12a))](document['querySelectorAll']('ul'),{'draggable':'li'});
 // ====================================================================
 //TAG/ELEMENT ELEMENT SELECTION:
 // ====================================================================
@@ -54,3 +54,19 @@ themer.addEventListener("input", e => {
 })
 
 saveButton.addEventListener('click', saveCV);
+
+// ====================================================================
+//INSERTION AND DELETION
+// ====================================================================
+
+const addItem = event => {
+    // Copy the <li> element and its child nodes
+    let targetClone = event.target.parentElement.cloneNode(true);
+    event.target.parentElement.parentElement.appendChild(targetClone);  
+}
+
+const deleteItem = event => {
+    let target = event.target.parentElement;
+    let parentOfParent = event.target.parentElement.parentElement;
+    parentOfParent.removeChild(target);
+}

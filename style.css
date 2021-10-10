@@ -67,14 +67,34 @@ h1 {
     transition: 1s;
 }
 
+.float-undo{
+    position: fixed;
+    width: 60px;
+    height: 60px; 
+    bottom: 110px;
+    right: 40px;
+    background-color: #00cc99;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+    transition: 1s;
+}
+
 .float:hover {
+    background-color: #3d8371;
+}
+
+.float-undo:hover {
     background-color: #3d8371;
 }
 
 #position {
     position: fixed;
-    bottom: 120px;
+    bottom: 180px;
     right: 40px;
+    
 }
 
 .input-color-container {
@@ -84,6 +104,7 @@ h1 {
     height: 60px;
     border: solid 2px #ddd;
     border-radius: 40px;
+    
 }
 
 .input-color {
@@ -95,6 +116,9 @@ h1 {
     border: none;
     box-shadow: 2px 2px 3px #999;
     cursor: pointer;
+    -webkit-box-shadow: none;
+    
+    
 }
 
 .material-icons {
@@ -191,4 +215,8 @@ li:hover .material-icons {
 h5 {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.skills-block{
+    list-style: none;
 }
