@@ -181,7 +181,19 @@ li:hover .btn {
     display: inline-block;
 }
 
-.edite:hover .btn {
+.parent .btn{
+    display: none;
+}
+
+.parent:hover .btn {
+    display: inline-block;
+}
+
+div .btnOne{
+    display: none;
+}
+
+div:hover .btnOne{
     display: inline-block;
 }
 
@@ -191,10 +203,17 @@ li {
     border-radius: 5px;
 }
 
+
 li:hover {
     background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
     border: var(--li-border-color, #F9CB81) 3px dashed;
 }
+
+.edite:hover{
+    background-color: var(--edite-background-color, rgb(231, 212, 183, 0.2));
+    border: var(--edite-border-color, #F9CB81) 3px dashed;
+}
+
 
 li:active {
     cursor: -moz-grabbing;
@@ -208,6 +227,7 @@ li:hover .material-icons {
 .can-disable:hover {
     cursor: no-drop;
 }
+
 h5 {
     padding-top: 5px;
     padding-bottom: 5px;
