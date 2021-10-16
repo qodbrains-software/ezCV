@@ -210,8 +210,8 @@ li:hover {
 }
 
 .edite:hover{
-    background-color: var(--edite-background-color, rgb(231, 212, 183, 0.2));
-    border: var(--edite-border-color, #F9CB81) 3px dashed;
+    background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
+    border: var(--li-border-color, #F9CB81) 3px dashed;
 }
 
 
