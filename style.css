@@ -201,19 +201,12 @@ li {
     cursor: pointer;
     transition: background-color ease-in;
     border-radius: 5px;
-    border: 2px dashed transparent;
-    transition: 1s ease-in;
 }
 
 
 li:hover {
     background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
-    border: var(--li-border-color, #F9CB81) 2px dashed;
-}
-
-.edite {
-    border: 3px dashed transparent;
-    transition: 1s ease-in;
+    border: var(--li-border-color, #F9CB81) 3px dashed;
 }
 
 .edite:hover{
