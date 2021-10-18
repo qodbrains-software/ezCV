@@ -36,32 +36,7 @@ function _0xb375(){const _0x4e6002=['3482984YcmyCl','3NbgMJt','1842684shiUHm','c
 //MAKE LIST ITEMS SORTABLE:
 // ====================================================================
 
-let sortable = new Sortable.default(document.querySelectorAll('ul'), {
-    draggable: 'li',
-    mirror: {
-        constrainDimensions: true
-    }
-  });
-
-const disableSortElements = document.querySelectorAll('.action-btn');
-
-const attachMouseEvents = nodeList => {
-    nodeList.forEach(node => {
-        node.addEventListener('mouseenter', () => {
-            sortable.destroy();
-        })
-        node.addEventListener('mouseleave', () => {
-            sortable = new Sortable.default(document.querySelectorAll('ul'), {
-                draggable: 'li',
-                mirror: {
-                    constrainDimensions: true
-                }
-              });
-        })
-    })
-}
-
-attachMouseEvents(disableSortElements)
+function _0x36db(){const _0x44c218=['addEventListener','forEach','240121lkxGha','4wgklfP','36CyCUch','4kSHOKu','querySelectorAll','935290gnuIkt','4939rlgNlj','24WEpZkO','destroy','366606xeUaNb','498445UChYIC','default','496137vNmLtz','.action-btn','288856KYqcCM'];_0x36db=function(){return _0x44c218;};return _0x36db();}const _0x48d863=_0xfb54;(function(_0x21ffb4,_0x185b32){const _0x6b273e=_0xfb54,_0x3e7e95=_0x21ffb4();while(!![]){try{const _0x347a42=parseInt(_0x6b273e(0x1b6))/0x1+parseInt(_0x6b273e(0x1ba))/0x2*(-parseInt(_0x6b273e(0x1b4))/0x3)+parseInt(_0x6b273e(0x1bc))/0x4*(-parseInt(_0x6b273e(0x1b2))/0x5)+-parseInt(_0x6b273e(0x1b1))/0x6+-parseInt(_0x6b273e(0x1b9))/0x7*(-parseInt(_0x6b273e(0x1af))/0x8)+parseInt(_0x6b273e(0x1bb))/0x9*(parseInt(_0x6b273e(0x1ad))/0xa)+-parseInt(_0x6b273e(0x1ae))/0xb;if(_0x347a42===_0x185b32)break;else _0x3e7e95['push'](_0x3e7e95['shift']());}catch(_0x2bc940){_0x3e7e95['push'](_0x3e7e95['shift']());}}}(_0x36db,0x42ddc));let sortable=new Sortable[(_0x48d863(0x1b3))](document[_0x48d863(0x1ac)]('ul'),{'draggable':'li','mirror':{'constrainDimensions':!![]}});function _0xfb54(_0x5d144a,_0x364893){const _0x36dbc3=_0x36db();return _0xfb54=function(_0xfb546b,_0x4d63ff){_0xfb546b=_0xfb546b-0x1ac;let _0x40af1e=_0x36dbc3[_0xfb546b];return _0x40af1e;},_0xfb54(_0x5d144a,_0x364893);}const disableSortElements=document['querySelectorAll'](_0x48d863(0x1b5)),attachMouseEvents=_0x41fe63=>{const _0x245d72=_0x48d863;_0x41fe63[_0x245d72(0x1b8)](_0x20cbb1=>{const _0x5e5b54=_0x245d72;_0x20cbb1[_0x5e5b54(0x1b7)]('mouseenter',()=>{const _0x40f6a0=_0x5e5b54;sortable[_0x40f6a0(0x1b0)]();}),_0x20cbb1[_0x5e5b54(0x1b7)]('mouseleave',()=>{const _0xe94ced=_0x5e5b54;sortable=new Sortable['default'](document[_0xe94ced(0x1ac)]('ul'),{'draggable':'li','mirror':{'constrainDimensions':!![]}});});});};attachMouseEvents(disableSortElements);
 
 // ====================================================================
 //TAG/ELEMENT ELEMENT SELECTION:
@@ -89,18 +64,7 @@ saveButton.addEventListener('click', saveCV);
 const addItem = event => {
     // Copy the <li> element and its child nodes
     let targetClone = event.target.parentElement.cloneNode(true);
-    targetClone.addEventListener('mouseenter', () => {
-        sortable.destroy();
-    })
-    targetClone.addEventListener('mouseleave', () => {
-        sortable = new Sortable.default(document.querySelectorAll('ul'), {
-            draggable: 'li',
-            mirror: {
-                constrainDimensions: true
-            }
-          });
-    })
-    event.target.parentElement.parentElement.appendChild(targetClone); 
+    event.target.parentElement.parentElement.appendChild(targetClone);  
 }
 
 const deleteItem = event => {
