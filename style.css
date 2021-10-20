@@ -189,11 +189,11 @@ li:hover .btn {
     display: inline-block;
 }
 
-div .btnOne{
+.experience-parent .btnOne{
     display: none;
 }
 
-div:hover .btnOne{
+.experience-parent:hover .btnOne{
     display: inline-block;
 }
 
