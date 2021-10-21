@@ -214,12 +214,6 @@ li:hover {
     /* border: var(--li-border-color, #F9CB81) 3px dashed; */
 }
 
-
-li:active {
-    cursor: -moz-grabbing;
-    cursor: grabbing;
-}
-
 li:hover .material-icons {
     /* border: 1px var(--default-icons, #F9CB81) dashed; */
 }

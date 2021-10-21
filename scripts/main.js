@@ -35,7 +35,32 @@ function _0xb375() { const _0x4e6002 = ['3482984YcmyCl', '3NbgMJt', '1842684shiU
 // ====================================================================
 //MAKE LIST ITEMS SORTABLE:
 // ====================================================================
-const _0x447564 = _0x5ba0; function _0x5ba0(_0x4a6426, _0x2ad746) { const _0x38c97d = _0x38c9(); return _0x5ba0 = function (_0x5ba001, _0x42ad85) { _0x5ba001 = _0x5ba001 - 0x15b; let _0x52d169 = _0x38c97d[_0x5ba001]; return _0x52d169; }, _0x5ba0(_0x4a6426, _0x2ad746); } function _0x38c9() { const _0x376539 = ['querySelectorAll', 'forEach', '402412QiLvxE', '3287184dyPcjf', 'addEventListener', 'default', '4610032SzSGle', '3623424DJUpdh', '6DwpagP', '4270235ClisIu', 'draggable', '20247064nKnpdB', '735261qkSeaT', 'options']; _0x38c9 = function () { return _0x376539; }; return _0x38c9(); } (function (_0x39cf96, _0x362033) { const _0x32f3b2 = _0x5ba0, _0x451d33 = _0x39cf96(); while (!![]) { try { const _0x73c5e4 = parseInt(_0x32f3b2(0x165)) / 0x1 + -parseInt(_0x32f3b2(0x15d)) / 0x2 * (parseInt(_0x32f3b2(0x161)) / 0x3) + -parseInt(_0x32f3b2(0x166)) / 0x4 + -parseInt(_0x32f3b2(0x15e)) / 0x5 + parseInt(_0x32f3b2(0x15c)) / 0x6 + -parseInt(_0x32f3b2(0x15b)) / 0x7 + parseInt(_0x32f3b2(0x160)) / 0x8; if (_0x73c5e4 === _0x362033) break; else _0x451d33['push'](_0x451d33['shift']()); } catch (_0x349cdf) { _0x451d33['push'](_0x451d33['shift']()); } } }(_0x38c9, 0x7223f)); let sortable = new Sortable[(_0x447564(0x168))](document['querySelectorAll']('ul'), { 'draggable': 'li', 'mirror': { 'constrainDimensions': !![] } }); const grabDisableSortButtons = () => { const _0x330602 = _0x447564; return document[_0x330602(0x163)]('.action-btn'); }, attachMouseEvents = _0x160724 => { const _0x32685 = _0x447564; _0x160724[_0x32685(0x164)](_0x5ff052 => { const _0x19f791 = _0x32685; _0x5ff052[_0x19f791(0x167)]('mouseenter', () => { const _0x3831c9 = _0x19f791; sortable['options'][_0x3831c9(0x15f)] = null; }), _0x5ff052[_0x19f791(0x167)]('mouseleave', () => { const _0x112dd8 = _0x19f791; sortable[_0x112dd8(0x162)][_0x112dd8(0x15f)] = 'li'; }); }); }; attachMouseEvents(grabDisableSortButtons());
+let sortable = new Sortable.default(document.querySelectorAll('ul'), {
+    draggable: 'li',
+    mirror: {
+        constrainDimensions: true
+    }
+  });
+
+
+
+const grabSortDisablingElements = () => {
+    return disableSortElements = document.querySelectorAll('.action-btn, p[contenteditable="true"]');
+}
+
+const attachMouseEvents = nodeList => {
+    nodeList.forEach(node => {
+        node.addEventListener('mouseenter', () => {
+            sortable.options.draggable = null;
+        })
+        node.addEventListener('mouseleave', () => {
+            sortable.options.draggable = 'li';
+        })
+    })
+}
+
+
+attachMouseEvents(grabSortDisablingElements())
 // ====================================================================
 //TAG/ELEMENT ELEMENT SELECTION:
 // ====================================================================
@@ -63,7 +88,7 @@ const addItem = event => {
     // Copy the <li> element and its child nodes
     let targetClone = event.target.parentElement.cloneNode(true);
     event.target.parentElement.parentElement.appendChild(targetClone);
-    attachMouseEvents(grabDisableSortButtons())
+    attachMouseEvents(grabSortDisablingElements())
 }
 
 const deleteItem = event => {
