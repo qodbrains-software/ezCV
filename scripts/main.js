@@ -45,7 +45,7 @@ let sortable = new Sortable.default(document.querySelectorAll('ul'), {
 
 
 const grabSortDisablingElements = () => {
-    return disableSortElements = document.querySelectorAll('.action-btn, p[contenteditable="true"]');
+    return disableSortElements = document.querySelectorAll('.action-btn');
 }
 
 const attachMouseEvents = nodeList => {
@@ -53,9 +53,11 @@ const attachMouseEvents = nodeList => {
         node.addEventListener('mouseenter', () => {
             sortable.options.draggable = null;
         })
-        node.addEventListener('mouseleave', () => {
-            sortable.options.draggable = 'li';
-        })
+        if(node.tagName === 'BUTTON'){
+            node.addEventListener('mouseleave', () => {
+                sortable.options.draggable = 'li';
+            })
+        }
     })
 }
 
