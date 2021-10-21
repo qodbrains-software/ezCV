@@ -45,7 +45,7 @@ let sortable = new Sortable.default(document.querySelectorAll('ul'), {
 
 
 const grabSortDisablingElements = () => {
-    return disableSortElements = document.querySelectorAll('.action-btn');
+    return disableSortElements = document.querySelectorAll('.action-btn, p[contenteditable="true"]');
 }
 
 const attachMouseEvents = nodeList => {

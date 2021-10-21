@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Is your CV needed quickly? Then welcome to ezCV! Edit your CV right here, save it as a PDF then send it online or print it out! ezCV. Easy, quick, effective.">
-    <meta name="keywords" content="Quick CV, Fast CV, Free CV, Eazi CV, Online CV, Editable CV, Easy CV, CV to go, Curriculum Vitae, Save CV as PDF, Color changeable CV">
+    <meta name="description"
+        content="Is your CV needed quickly? Then welcome to ezCV! Edit your CV right here, save it as a PDF then send it online or print it out! ezCV. Easy, quick, effective.">
+    <meta name="keywords"
+        content="Quick CV, Fast CV, Free CV, Eazi CV, Online CV, Editable CV, Easy CV, CV to go, Curriculum Vitae, Save CV as PDF, Color changeable CV">
     <meta name="author" content="Qodbrains">
     <meta name="revisit-after" content="10 days">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,234 +33,248 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="main">
-            <div class="column-left">
-                <h1 id="full-names" contenteditable="true">Ralph Edwards</h1>
-                <h2 contenteditable="true">Software Engineer</h2>
-                <br>
-                <!-- line break -->
-                <div class="my-self-block">
-                    <h3 class="header-text" id="h3">My Self</h3>
-                    <P contenteditable="true">
-                        Six years of experience facilitating cutting-edge engineering solutions with a wide range of
-                        e-commerce application and technology skills. Proven ability to leverage full-stack expertise to
-                        build interactive and user-centered website designs to scale. Extensive expertise in large
-                        system architecture development and administration, as well as network design and configuration.
-                    </P>
-                </div>
-                <br>
-                <!-- line break -->
-
-                <div class="experience-block">
-                    <h3 class="header-text">Experience</h3>
-                    <div class="experience-parent">
-                        <div class="edite">
-                            <div class="editables">
-                                <h5 contenteditable="true">ABSA - Johannesburg</h5>
-                                <div class="align">
-                                    <p contenteditable="true">Senior Web Developer/Systems Architect</p>
-                                    <p contenteditable="true">Sept 2016 – Present</p>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <p contenteditable="true">Successfully installed Linux servers and virtualized
-                                            environments using Docker, Hyper-V, and Amazon Web Services.</p>
-                                        <button onclick="addItem(event)"
-                                            class="material-icons btn action-btn">add</button>
-                                        <button onclick="deleteItem(event)"
-                                            class="material-icons btn action-btn">delete</button>
-                                        <button class="material-icons btn sort">swap_vert</button>
-                                    </li>
-                                    <li>
-                                        <p contenteditable="true">Suggested a new tactic to persuade canceling customers
-                                            to stay
-                                            with the company, resulting in a 5% decrease in cancellations</p>
-                                        <button onclick="addItem(event)"
-                                            class="material-icons btn action-btn">add</button>
-                                        <button onclick="deleteItem(event)"
-                                            class="material-icons btn action-btn">delete</button>
-                                        <button class="material-icons btn sort">swap_vert</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <button onclick="addItem(event)" class="material-icons btnOne">add</button>
-                        <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
+    <div class="grid-view">
+        <div class="container">
+            <div class="main">
+                <div class="column-left">
+                    <h1 id="full-names" contenteditable="true">Ralph Edwards</h1>
+                    <h2 contenteditable="true">Software Engineer</h2>
+                    <br>
+                    <!-- line break -->
+                    <div class="my-self-block">
+                        <h3 class="header-text" id="h3">My Self</h3>
+                        <P contenteditable="true">
+                            Six years of experience facilitating cutting-edge engineering solutions with a wide range of
+                            e-commerce application and technology skills. Proven ability to leverage full-stack
+                            expertise to
+                            build interactive and user-centered website designs to scale. Extensive expertise in large
+                            system architecture development and administration, as well as network design and
+                            configuration.
+                        </P>
                     </div>
                     <br>
                     <!-- line break -->
 
-                    <div class="experience-parent">
-                        <div class="edite">
-                            <div class="editables">
-                                <h5 contenteditable="true">Capitec - Cape Town</h5>
-                                <div class="align">
-                                    <p contenteditable="true">Contracting Software Engineer</p>
-                                    <p contenteditable="true">Sept 2013 – 2016</p>
+                    <div class="experience-block">
+                        <h3 class="header-text">Experience</h3>
+                        <div class="experience-parent">
+                            <div class="edite">
+                                <div class="editables">
+                                    <h5 contenteditable="true">ABSA - Johannesburg</h5>
+                                    <div class="align">
+                                        <p contenteditable="true">Senior Web Developer/Systems Architect</p>
+                                        <p contenteditable="true">Sept 2016 – Present</p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p contenteditable="true">Successfully installed Linux servers and
+                                                virtualized
+                                                environments using Docker, Hyper-V, and Amazon Web Services.</p>
+                                            <button onclick="addItem(event)"
+                                                class="material-icons btn action-btn">add</button>
+                                            <button onclick="deleteItem(event)"
+                                                class="material-icons btn action-btn">delete</button>
+                                            <button class="material-icons btn sort">swap_vert</button>
+                                        </li>
+                                        <li>
+                                            <p contenteditable="true">Suggested a new tactic to persuade canceling
+                                                customers
+                                                to stay
+                                                with the company, resulting in a 5% decrease in cancellations</p>
+                                            <button onclick="addItem(event)"
+                                                class="material-icons btn action-btn">add</button>
+                                            <button onclick="deleteItem(event)"
+                                                class="material-icons btn action-btn">delete</button>
+                                            <button class="material-icons btn sort">swap_vert</button>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li>
-                                        <p contenteditable="true">Successfully generated back-end programming utilizing
-                                            LAMP
-                                            stack; Linux (CentOS 5/Redhat), Apache with Kohana 2</p>
-                                        <button onclick="addItem(event)"
-                                            class="material-icons btn action-btn">add</button>
-                                        <button onclick="deleteItem(event)"
-                                            class="material-icons btn action-btn">delete</button>
-                                        <button class="material-icons btn sort">swap_vert</button>
-                                    </li>
-                                    <li>
-                                        <p contenteditable="true">Implemented new C# class library for the SQL server
-                                            database
-                                            access layer, and updated previous web page frameworks.</p>
-                                        <button onclick="addItem(event)"
-                                            class="material-icons btn action-btn">add</button>
-                                        <button onclick="deleteItem(event)"
-                                            class="material-icons btn action-btn">delete</button>
-                                        <button class="material-icons btn sort">swap_vert</button>
-                                    </li>
-                                </ul>
                             </div>
-                        </div>
-                        <button onclick="addItem(event)" class="material-icons btnOne">add</button>
-                        <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
-                    </div>
-                </div>
-                <br>
-                <!-- line break -->
-                <div class="education-block">
-                    <h3 class="header-text">Education</h3>
-                    <div class="align">
-                        <ul>
-                            <li class="parent skills-block">
-                                <h4 contenteditable="true">B.A Computer Science</h4>
-                                <p contenteditable="true">University of Cape Town</p>
-                                <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                                <button onclick="deleteItem(event)"
-                                    class="material-icons btn action-btn">delete</button>
-                                <button class="material-icons btn sort">swap_vert</button>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li class="parent skills-block">
-                                <h4 contenteditable="true">Honours Computer Science </h4>
-                                <P contenteditable="true">University of Cape Town</P>
-                                <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                                <button onclick="deleteItem(event)"
-                                    class="material-icons btn action-btn">delete</button>
-                                <button class="material-icons btn sort">swap_vert</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- right column start here -->
-            <div class="column-right">
-                <aside>
-                    <div class="contact-block">
-                        <h3 class="header-text">Contact</h3>
-                        <div class="items">
-                            <span class="material-icons">room</span>
-                            <p class="space" contenteditable="true">3423 South Street, Boston, MA 02112</p>
-                        </div>
-                        <div class="items">
-                            <span class="material-icons">phone</span>
-                            <p class="space" contenteditable="true">774-987-4009</p>
-                        </div>
-                        <div class="items">
-                            <span class="material-icons">email</span>
-                            <a class="space link email-link" contenteditable="true" href="#">andrewblack@gmail.com</a>
-                        </div>
-                        <div class="items">
-                            <span class="material-icons can-disable">language</span>
-                            <a class="space link website-link" contenteditable="true"
-                                href="#">auptowork.com/mycv/j.smith</a>
+                            <button onclick="addItem(event)" class="material-icons btnOne">add</button>
+                            <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
                         </div>
                         <br>
-                    </div>
-                    <!-- line break -->
-                    <h3 class="header-text">Skills</h3>
-                    <ul class="skills-block">
-                        <li class="skill edite">
-                            <h5 contenteditable="true">Problem Solving</h5>
-                            <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
-                            <button class="material-icons btn sort">swap_vert</button>
-                        </li>
-                        <li class="skill edite">
-                            <h5 contenteditable="true">Microsoft Office Suite</h5>
-                            <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
-                            <button class="material-icons btn sort">swap_vert</button>
-                        </li>
-                        <li class="skill edite">
-                            <h5 contenteditable="true">Team Leadership</h5>
-                            <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
-                            <button class="material-icons btn sort">swap_vert</button>
-                        </li>
+                        <!-- line break -->
 
-                        <li class="skill edite">
-                            <h5 contenteditable="true">Excellent communication skill</h5>
-                            <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
-                            <button class="material-icons btn sort">swap_vert</button>
-                        </li>
-                        <li class="skill edite">
-                            <h5 contenteditable="true">70WPM Typist</h5>
-                            <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
-                            <button class="material-icons btn sort">swap_vert</button>
-                        </li>
-                    </ul>
+                        <div class="experience-parent">
+                            <div class="edite">
+                                <div class="editables">
+                                    <h5 contenteditable="true">Capitec - Cape Town</h5>
+                                    <div class="align">
+                                        <p contenteditable="true">Contracting Software Engineer</p>
+                                        <p contenteditable="true">Sept 2013 – 2016</p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p contenteditable="true">Successfully generated back-end programming
+                                                utilizing
+                                                LAMP
+                                                stack; Linux (CentOS 5/Redhat), Apache with Kohana 2</p>
+                                            <button onclick="addItem(event)"
+                                                class="material-icons btn action-btn">add</button>
+                                            <button onclick="deleteItem(event)"
+                                                class="material-icons btn action-btn">delete</button>
+                                            <button class="material-icons btn sort">swap_vert</button>
+                                        </li>
+                                        <li>
+                                            <p contenteditable="true">Implemented new C# class library for the SQL
+                                                server
+                                                database
+                                                access layer, and updated previous web page frameworks.</p>
+                                            <button onclick="addItem(event)"
+                                                class="material-icons btn action-btn">add</button>
+                                            <button onclick="deleteItem(event)"
+                                                class="material-icons btn action-btn">delete</button>
+                                            <button class="material-icons btn sort">swap_vert</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button onclick="addItem(event)" class="material-icons btnOne">add</button>
+                            <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
+                        </div>
+                    </div>
                     <br>
                     <!-- line break -->
-                    <div>
-                        <h3 class="header-text can-disable">Certification</h3>
-                        <ul class="certification-section skills-block">
-
-                            <li class="edite">
-                                <h5 contenteditable="true">Best Worker Of the Institution</h5>
-                                <p contenteditable="true">2017, Claredon Smith</p>
+                    <div class="education-block">
+                        <h3 class="header-text">Education</h3>
+                        <div class="align">
+                            <ul>
+                                <li class="parent skills-block">
+                                    <h4 contenteditable="true">B.A Computer Science</h4>
+                                    <p contenteditable="true">University of Cape Town</p>
+                                    <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                    <button onclick="deleteItem(event)"
+                                        class="material-icons btn action-btn">delete</button>
+                                    <button class="material-icons btn sort">swap_vert</button>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="parent skills-block">
+                                    <h4 contenteditable="true">Honours Computer Science </h4>
+                                    <P contenteditable="true">University of Cape Town</P>
+                                    <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                    <button onclick="deleteItem(event)"
+                                        class="material-icons btn action-btn">delete</button>
+                                    <button class="material-icons btn sort">swap_vert</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- right column start here -->
+                <div class="column-right">
+                    <aside>
+                        <div class="contact-block">
+                            <h3 class="header-text">Contact</h3>
+                            <div class="items">
+                                <span class="material-icons">room</span>
+                                <p class="space" contenteditable="true">3423 South Street, Boston, MA 02112</p>
+                            </div>
+                            <div class="items">
+                                <span class="material-icons">phone</span>
+                                <p class="space" contenteditable="true">774-987-4009</p>
+                            </div>
+                            <div class="items">
+                                <span class="material-icons">email</span>
+                                <a class="space link email-link" contenteditable="true"
+                                    href="#">andrewblack@gmail.com</a>
+                            </div>
+                            <div class="items">
+                                <span class="material-icons can-disable">language</span>
+                                <a class="space link website-link" contenteditable="true"
+                                    href="#">auptowork.com/mycv/j.smith</a>
+                            </div>
+                            <br>
+                        </div>
+                        <!-- line break -->
+                        <h3 class="header-text">Skills</h3>
+                        <ul class="skills-block">
+                            <li class="skill edite">
+                                <h5 contenteditable="true">Problem Solving</h5>
+                                <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                <button onclick="deleteItem(event)"
+                                    class="material-icons btn action-btn">delete</button>
+                                <button class="material-icons btn sort">swap_vert</button>
+                            </li>
+                            <li class="skill edite">
+                                <h5 contenteditable="true">Microsoft Office Suite</h5>
+                                <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                <button onclick="deleteItem(event)"
+                                    class="material-icons btn action-btn">delete</button>
+                                <button class="material-icons btn sort">swap_vert</button>
+                            </li>
+                            <li class="skill edite">
+                                <h5 contenteditable="true">Team Leadership</h5>
                                 <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
                                 <button onclick="deleteItem(event)"
                                     class="material-icons btn action-btn">delete</button>
                                 <button class="material-icons btn sort">swap_vert</button>
                             </li>
 
-                        </ul>
-                    </div>
-                    <br>
-                    <!-- line break -->
-                    <div>
-                        <h3 class="header-text can-disable">Awards</h3>
-                        <ul class="awards-section skills-block">
-
-                            <li class="edite">
-                                <h5 contenteditable="true">Outstanding Achievement Award</h5>
-                                <p contenteditable="true">December 2009, Didier Sachs</p>
+                            <li class="skill edite">
+                                <h5 contenteditable="true">Excellent communication skill</h5>
                                 <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
                                 <button onclick="deleteItem(event)"
                                     class="material-icons btn action-btn">delete</button>
                                 <button class="material-icons btn sort">swap_vert</button>
                             </li>
-
+                            <li class="skill edite">
+                                <h5 contenteditable="true">70WPM Typist</h5>
+                                <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                <button onclick="deleteItem(event)"
+                                    class="material-icons btn action-btn">delete</button>
+                                <button class="material-icons btn sort">swap_vert</button>
+                            </li>
                         </ul>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </div>
-    <div class="avail-actions">
-        <button class="float save-button">Save CV as PDF</button>
-        <button class="float-undo">undo</button>
-        <div id="position">
-            <div class="input-color-container">
-                <input type="color" class="themer input-color" value="#00cc99" name="themer">
-            </div>
-        </div>
+                        <br>
+                        <!-- line break -->
+                        <div>
+                            <h3 class="header-text can-disable">Certification</h3>
+                            <ul class="certification-section skills-block">
 
+                                <li class="edite">
+                                    <h5 contenteditable="true">Best Worker Of the Institution</h5>
+                                    <p contenteditable="true">2017, Claredon Smith</p>
+                                    <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                    <button onclick="deleteItem(event)"
+                                        class="material-icons btn action-btn">delete</button>
+                                    <button class="material-icons btn sort">swap_vert</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <br>
+                        <!-- line break -->
+                        <div>
+                            <h3 class="header-text can-disable">Awards</h3>
+                            <ul class="awards-section skills-block">
+
+                                <li class="edite">
+                                    <h5 contenteditable="true">Outstanding Achievement Award</h5>
+                                    <p contenteditable="true">December 2009, Didier Sachs</p>
+                                    <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
+                                    <button onclick="deleteItem(event)"
+                                        class="material-icons btn action-btn">delete</button>
+                                    <button class="material-icons btn sort">swap_vert</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="avail-actions">
+            <button class="float save-button">Save CV as PDF</button>
+            <button class="float-undo">undo</button>
+            <div id="position">
+                <div class="input-color-container">
+                    <input type="color" class="themer input-color" value="#00cc99" name="themer">
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
     <script src="./scripts/HTML2canvas.js"></script>
