@@ -206,12 +206,12 @@ li {
 
 li:hover {
     background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
-    border: var(--li-border-color, #F9CB81) 3px dashed;
+    /* border: var(--li-border-color, #F9CB81) 3px dashed; */
 }
 
 .edite:hover{
     background-color: var(--li-background-color, rgb(231, 212, 183, 0.2));
-    border: var(--li-border-color, #F9CB81) 3px dashed;
+    /* border: var(--li-border-color, #F9CB81) 3px dashed; */
 }
 
 
@@ -221,7 +221,7 @@ li:active {
 }
 
 li:hover .material-icons {
-    border: 1px var(--default-icons, #F9CB81) dashed;
+    /* border: 1px var(--default-icons, #F9CB81) dashed; */
 }
 
 .can-disable:hover {
