@@ -56,6 +56,8 @@
                         <h3 class="header-text">Experience</h3>
                         <div class="experience-parent">
                             <div class="edite">
+                                <button onclick="addItem(event)" class="material-icons btnOne">add</button>
+                                <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
                                 <div class="editables">
                                     <h5 contenteditable="true">ABSA - Johannesburg</h5>
                                     <div class="align">
@@ -64,13 +66,15 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <p contenteditable="true">Successfully installed Linux servers and virtualized environments using Docker, Hyper-V, and Amazon Web Services.</p>
+                                            <p contenteditable="true">Successfully installed Linux servers and virtualized environments using Docker, Hyper-V, and Amazon Web Services.
+                                            </p>
                                             <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
                                             <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
                                             <button class="material-icons btn sort">swap_vert</button>
                                         </li>
                                         <li>
-                                            <p contenteditable="true">Suggested a new tactic to persuade canceling customers to stay with the company, resulting in a 5% decrease in cancellations</p>
+                                            <p contenteditable="true">Suggested a new tactic to persuade canceling customers to stay with the company, resulting in a 5% decrease in cancellations
+                                            </p>
                                             <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
                                             <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
                                             <button class="material-icons btn sort">swap_vert</button>
@@ -78,14 +82,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button onclick="addItem(event)" class="material-icons btnOne">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
                         </div>
                         <br>
                         <!-- line break -->
 
                         <div class="experience-parent">
                             <div class="edite">
+                                <button onclick="addItem(event)" class="material-icons btnOne">add</button>
+                                <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
                                 <div class="editables">
                                     <h5 contenteditable="true">Capitec - Cape Town</h5>
                                     <div class="align">
@@ -100,7 +104,8 @@
                                             <button class="material-icons btn sort">swap_vert</button>
                                         </li>
                                         <li>
-                                            <p contenteditable="true">Implemented new C# class library for the SQL server database access layer, and updated previous web page frameworks.</p>
+                                            <p contenteditable="true">Implemented new C# class library for the SQL server database access layer, and updated previous web page frameworks.
+                                            </p>
                                             <button onclick="addItem(event)" class="material-icons btn action-btn">add</button>
                                             <button onclick="deleteItem(event)" class="material-icons btn action-btn">delete</button>
                                             <button class="material-icons btn sort">swap_vert</button>
@@ -108,8 +113,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button onclick="addItem(event)" class="material-icons btnOne">add</button>
-                            <button onclick="deleteItem(event)" class="material-icons btnOne">delete</button>
                         </div>
                     </div>
                     <br>
@@ -155,7 +158,7 @@
                                 <span class="material-icons">email</span>
                                 <a class="space link email-link" contenteditable="true" href="#">andrewblack@gmail.com</a>
                             </div>
-                            <div class="items">
+                            <div class="items website">
                                 <span class="material-icons can-disable">language</span>
                                 <a class="space link website-link" contenteditable="true" href="#">auptowork.com/mycv/j.smith</a>
                             </div>
@@ -198,7 +201,7 @@
                         </ul>
                         <br>
                         <!-- line break -->
-                        <div>
+                        <div class="certification">
                             <h3 class="header-text can-disable">Certification</h3>
                             <ul class="certification-section skills-block">
 
@@ -214,8 +217,8 @@
                         </div>
                         <br>
                         <!-- line break -->
-                        <div>
-                            <h3 class="header-text can-disable">Awards</h3>
+                        <div class="awards">
+                            <h3 class="header-text can-disable awards">Awards</h3>
                             <ul class="awards-section skills-block">
 
                                 <li class="edite">
@@ -235,15 +238,41 @@
         <div class="action-center">
             <div class="color-selection">
                 <ul class="colors">
-                    <li class="#ef5350 color-item" id="red"></li>
-                    <li class="#66bb6a color-item" id="green"></li>
-                    <li class="#000 color-item" id="black"></li>
                     <li class="#42a5f5 color-item" id="blue"></li>
+                    <li class="#ef5350 color-item" id="red"></li>
+                    <li class="#3dbdae color-item" id="green"></li>
+                    <li class="#000 color-item" id="black"></li>
                     <li id="universal"><input type="color" id="color-input" class="themer input-color"></li>
                 </ul>
             </div>
             <div class="buttons">
+                <label class="label some-space">
+                    <div class="label-text vertical-space">Certification</div>
+                    <div class="toggle">
+                        <input class="toggle-state" type="checkbox" name="certification" value="check" checked />
+                        <div class="indicator"></div>
+                    </div>
+                </label>
+                <label class="label some-space">
+                    <div class="label-text vertical-space">Awards</div>
+                    <div class="toggle">
+                        <input class="toggle-state" type="checkbox" name="awards" value="check" checked />
+                        <div class="indicator"></div>
+                    </div>
+                </label>
+                <label class="label some-space">
+                    <div class="label-text vertical-space">Website</div>
+                    <div class="toggle">
+                        <input class="toggle-state" type="checkbox" name="website" value="check" checked />
+                        <div class="indicator"></div>
+                    </div>
+                </label>
                 <button class="css-button-neumorphic save-button">Save CV as PDF</button>
+            </div>
+            <div class="contacts">
+                <p>👋🏼Want to say Hi? <br> or <br> 🧑🏼‍💻Need help with your software development projects?</p>
+                <a class="space link email-link" href="mailto:devs@qodbrains.com">✉️devs@qodbrains.com</a>
+                <p>🤙🏼+27 63-978-3205</p>
             </div>
         </div>
     </div>
