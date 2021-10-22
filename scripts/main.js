@@ -131,45 +131,45 @@ const makeLinksDynamic = _0x5ec118 => {
 };
 
 //DISABLE/ENABLE SECTIONS LOGIC:
-function _0xb375() {
-    const _0x4e6002 = ['3482984YcmyCl', '3NbgMJt', '1842684shiUHm', 'click', '2261418wrCCBt', 'addEventListener', 'target', '2490640WhGSQQ', '185166iRXkOS', 'forEach', 'style', '4598062CywVfi', 'display', '875054HCLPgd'];
-    _0xb375 = function() { return _0x4e6002; };
-    return _0xb375();
-}(function(_0x2d4199, _0x2fcde0) {
-    const _0x5c2069 = _0x41d3,
-        _0xd9477b = _0x2d4199();
-    while (!![]) {
-        try {
-            const _0x25d66d = -parseInt(_0x5c2069(0x105)) / 0x1 + parseInt(_0x5c2069(0xfc)) / 0x2 * (parseInt(_0x5c2069(0xfe)) / 0x3) + -parseInt(_0x5c2069(0xff)) / 0x4 + parseInt(_0x5c2069(0x104)) / 0x5 + parseInt(_0x5c2069(0x101)) / 0x6 + -parseInt(_0x5c2069(0xfa)) / 0x7 + parseInt(_0x5c2069(0xfd)) / 0x8;
-            if (_0x25d66d === _0x2fcde0) break;
-            else _0xd9477b['push'](_0xd9477b['shift']());
-        } catch (_0x40416e) { _0xd9477b['push'](_0xd9477b['shift']()); }
-    }
-}(_0xb375, 0x6cb2c));
-const disableSection = _0x92bfb => {
-        const _0x5bc1e2 = _0x41d3;
-        _0x92bfb['parentElement'][_0x5bc1e2(0xf9)][_0x5bc1e2(0xfb)] = 'none';
-    },
-    listOfSections = document['querySelectorAll']('.can-disable'),
-    attach = _0x450b68 => {
-        const _0x93bc14 = _0x41d3;
-        _0x450b68[_0x93bc14(0xf8)](_0x4faf2e => {
-            const _0x2209f9 = _0x93bc14;
-            _0x4faf2e[_0x2209f9(0x102)](_0x2209f9(0x100), _0x83968a => {
-                const _0x412807 = _0x2209f9;
-                disableSection(_0x83968a[_0x412807(0x103)]);
-            });
-        });
-    };
+// function _0xb375() {
+//     const _0x4e6002 = ['3482984YcmyCl', '3NbgMJt', '1842684shiUHm', 'click', '2261418wrCCBt', 'addEventListener', 'target', '2490640WhGSQQ', '185166iRXkOS', 'forEach', 'style', '4598062CywVfi', 'display', '875054HCLPgd'];
+//     _0xb375 = function() { return _0x4e6002; };
+//     return _0xb375();
+// }(function(_0x2d4199, _0x2fcde0) {
+//     const _0x5c2069 = _0x41d3,
+//         _0xd9477b = _0x2d4199();
+//     while (!![]) {
+//         try {
+//             const _0x25d66d = -parseInt(_0x5c2069(0x105)) / 0x1 + parseInt(_0x5c2069(0xfc)) / 0x2 * (parseInt(_0x5c2069(0xfe)) / 0x3) + -parseInt(_0x5c2069(0xff)) / 0x4 + parseInt(_0x5c2069(0x104)) / 0x5 + parseInt(_0x5c2069(0x101)) / 0x6 + -parseInt(_0x5c2069(0xfa)) / 0x7 + parseInt(_0x5c2069(0xfd)) / 0x8;
+//             if (_0x25d66d === _0x2fcde0) break;
+//             else _0xd9477b['push'](_0xd9477b['shift']());
+//         } catch (_0x40416e) { _0xd9477b['push'](_0xd9477b['shift']()); }
+//     }
+// }(_0xb375, 0x6cb2c));
+// const disableSection = _0x92bfb => {
+//         const _0x5bc1e2 = _0x41d3;
+//         _0x92bfb['parentElement'][_0x5bc1e2(0xf9)][_0x5bc1e2(0xfb)] = 'none';
+//     },
+//     listOfSections = document['querySelectorAll']('.can-disable'),
+//     attach = _0x450b68 => {
+//         const _0x93bc14 = _0x41d3;
+//         _0x450b68[_0x93bc14(0xf8)](_0x4faf2e => {
+//             const _0x2209f9 = _0x93bc14;
+//             _0x4faf2e[_0x2209f9(0x102)](_0x2209f9(0x100), _0x83968a => {
+//                 const _0x412807 = _0x2209f9;
+//                 disableSection(_0x83968a[_0x412807(0x103)]);
+//             });
+//         });
+//     };
 
-function _0x41d3(_0x5a60be, _0x4663ae) { const _0xb37557 = _0xb375(); return _0x41d3 = function(_0x41d369, _0x3e82c5) { _0x41d369 = _0x41d369 - 0xf8; let _0x24b7bc = _0xb37557[_0x41d369]; return _0x24b7bc; }, _0x41d3(_0x5a60be, _0x4663ae); }
-attach(listOfSections);
+// function _0x41d3(_0x5a60be, _0x4663ae) { const _0xb37557 = _0xb375(); return _0x41d3 = function(_0x41d369, _0x3e82c5) { _0x41d369 = _0x41d369 - 0xf8; let _0x24b7bc = _0xb37557[_0x41d369]; return _0x24b7bc; }, _0x41d3(_0x5a60be, _0x4663ae); }
+// attach(listOfSections);
 
 // ====================================================================
 //MAKE LIST ITEMS SORTABLE:
 // ====================================================================
 let sortable = new Sortable.default(document.querySelectorAll('ul'), {
-    draggable: 'li',
+    draggable: null,
     mirror: {
         constrainDimensions: true
     }
@@ -177,23 +177,20 @@ let sortable = new Sortable.default(document.querySelectorAll('ul'), {
 
 
 
-const grabSortDisablingElements = () => {
-    return disableSortElements = document.querySelectorAll('.action-btn, p[contenteditable="true"]');
+const sortBehaviorElements = (selector) => {
+    return disableSortElements = document.querySelectorAll(selector);
 }
 
-const attachMouseEvents = nodeList => {
+const attachMouseEvents = (nodeList, event1, event2) => {
     nodeList.forEach(node => {
-        node.addEventListener('mouseenter', () => {
+        node.addEventListener(event1, () => {
             sortable.options.draggable = null;
         })
-        if (node.tagName === 'BUTTON') {
-            node.addEventListener('mouseleave', () => {
-                sortable.options.draggable = 'li';
-            })
-        }
+        node.addEventListener(event2, () => {
+            sortable.options.draggable = 'li';
+        })
     })
 }
-
 
 // ====================================================================
 //INSERTION AND DELETION
@@ -214,10 +211,26 @@ const themeOptionActivator = (nodeList) => {
 
 themeOptionActivator(themeOptions);
 
-attachMouseEvents(grabSortDisablingElements())
-    // ====================================================================
-    //TAG/ELEMENT ELEMENT SELECTION:
-    // ====================================================================
+//Disabling & Enabling:
+attachMouseEvents(sortBehaviorElements(".action-btn"), 'mouseenter', 'mouseleave')
+attachMouseEvents(sortBehaviorElements("p[contenteditable=true], h5[contenteditable=true]"), 'mousedown', 'mouseleave')
+
+//Enabling:
+attachMouseEvents(sortBehaviorElements(".sort"), 'mouseup', 'mouseenter')
+
+
+sortable.on('drag:stop', () => {
+    sortable.options.draggable = null;
+})
+
+sortable.on('drag:start', () => {
+    sortable.options.draggable = 'li';
+})
+
+
+// ====================================================================
+//TAG/ELEMENT ELEMENT SELECTION:
+// ====================================================================
 const themer = document.querySelector(".themer"); //input:color
 const saveButton = document.querySelector(".save-button");
 const links = document.querySelectorAll(".link");
@@ -242,7 +255,8 @@ const addItem = event => {
     // Copy the <li> element and its child nodes
     let targetClone = event.target.parentElement.cloneNode(true);
     event.target.parentElement.parentElement.appendChild(targetClone);
-    attachMouseEvents(grabSortDisablingElements())
+    attachMouseEvents(sortBehaviorElements(".action-btn"), 'mouseenter', 'mouseleave')
+    attachMouseEvents(sortBehaviorElements(".sort"), 'mouseleave', 'mouseenter')
 }
 
 const deleteItem = event => {
@@ -250,3 +264,38 @@ const deleteItem = event => {
     let parentOfParent = event.target.parentElement.parentElement;
     parentOfParent.removeChild(target);
 }
+
+
+// ====================================================================
+//TOGGLE SECTION ON AND OFF:
+// ====================================================================
+
+const sectionTogglers = document.querySelectorAll('.toggle-state');
+
+const toggledOff = [];
+
+const attachToggleEvents = (nodeList) => {
+    nodeList.forEach(toggleItem => {
+        toggleItem.addEventListener('change', () => {
+            //Get target of each toggle:
+            let target = document.querySelector(`.${toggleItem.name}`);
+            if (toggleItem.name === "website") {
+                if (toggleItem.checked) {
+                    target.style.visibility = 'visible';
+                } else {
+                    toggledOff.push(target)
+                    target.style.visibility = 'hidden';
+                }
+            } else {
+                if (toggleItem.checked) {
+                    target.style.display = 'unset';
+                } else {
+                    toggledOff.push(target)
+                    target.style.display = 'none';
+                }
+            }
+        })
+    })
+}
+
+attachToggleEvents(sectionTogglers);
