@@ -264,7 +264,7 @@ const deleteItem = event => {
     let parentOfParent = event.target.parentElement.parentElement;
     //Experience Block to have a min of one item
     if (parentOfParent.classList[0] === "experience-block") {
-        if (parentOfParent.children.length > 3) {
+        if (parentOfParent.children.length >= 3) {
             parentOfParent.removeChild(target);
         }
     } else if (parentOfParent.children.length > 1) { //Cover list items, awards, certification, skills
