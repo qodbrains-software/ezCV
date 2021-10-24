@@ -27,7 +27,7 @@ function _0x3cae() {
 }
 
 const detectPageHeight = () => {
-    return pageHeight = document.querySelector('.main').getBoundingClientRect().height;
+    return pageHeight = document.querySelector('body').getBoundingClientRect().height;
 }
 
 const addElement = () => {
@@ -262,7 +262,19 @@ const addItem = event => {
 const deleteItem = event => {
     let target = event.target.parentElement;
     let parentOfParent = event.target.parentElement.parentElement;
-    parentOfParent.removeChild(target);
+    //Experience Block to have a min of one item
+    if (parentOfParent.classList[0] === "experience-block") {
+        if (parentOfParent.children.length > 3) {
+            parentOfParent.removeChild(target);
+        }
+    } else if (parentOfParent.children.length > 1) { //Cover list items, awards, certification, skills
+        parentOfParent.removeChild(target);
+    } else if (parentOfParent.classList[0] === "edu-parent") {
+        let superParent = parentOfParent.parentElement
+        if (superParent.children.length > 1) {
+            superParent.removeChild(parentOfParent)
+        }
+    }
 }
 
 

@@ -205,7 +205,8 @@ li[contenteditable='true']:hover {
     padding: 5px;
 }
 
-.edite:hover {
+.edite:hover,
+.experience-parent:hover {
     background-color: var(--li-background-color, rgba(66, 165, 245, 0.1));
     border-radius: 5px;
     padding: 5px;
