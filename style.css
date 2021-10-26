@@ -384,3 +384,11 @@ h5 {
 .toggle-state:checked~.indicator {
     transform: translate3d(25%, 0, 0);
 }
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+.btnOne:hover {
+    background-color: lightgrey;
+}
