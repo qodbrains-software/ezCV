@@ -383,6 +383,7 @@ h5 {
 
 .toggle-state:checked~.indicator {
     transform: translate3d(25%, 0, 0);
+    background-color: rgb(96, 212, 96);
 }
 
 .btn:hover {
