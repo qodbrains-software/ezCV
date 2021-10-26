@@ -384,3 +384,19 @@ h5 {
 .toggle-state:checked~.indicator {
     transform: translate3d(25%, 0, 0);
 }
+
+.btn {
+    transition: ease-in 0.3s;
+}
+
+.btnOne {
+    transition: ease-in 0.3s;
+}
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+.btnOne:hover {
+    background-color: lightgrey;
+}
